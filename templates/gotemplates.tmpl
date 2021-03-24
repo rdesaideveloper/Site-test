@@ -1,0 +1,21 @@
+
+{{define "product.url" -}}
+{{.externalEntityId}}.html
+{{- end}}
+
+
+{{define "product.source" -}}
+<html>
+    <body>
+        <h1>{{.name}}</h1>
+        <p>SKU: {{.sku}}</p>
+        <img src={{.photoGallery}} alt="photo">
+        <p>Description:{{.richTextDescription}}</p>
+        <div>
+            <span>{{.size}}</span>
+            <span>{{.price}}</span>
+        </div>
+    </body>
+</html>
+{{end}}
+
